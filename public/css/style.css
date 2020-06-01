@@ -1,0 +1,31 @@
+
+
+                                /* STYLE */
+                                /* STYLE */
+                                /* STYLE */
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    color: white;
+    background-color: #190500;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(255, 247, 247);
+}
+
+a:hover {
+    color: white;
+}
+
+ul {
+    list-style: none;
+}
+
+.generalStyle{
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    color: white;
+}

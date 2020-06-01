@@ -6,11 +6,10 @@
 }
 img{
   position: absolute;
-  border-radius: 5px;
 }
 .navbar
 {
-  background-color:#372823!important ;
+  background-color: transparent!important ;
   position: fixed !important;
   top: 3%;
   right: 1.5%;  
@@ -31,7 +30,7 @@ article::before {
   position: absolute;
   top: 0; left: 0; right: 0; bottom: 0;
   display: block;
-  background: url("ny.jpg") top center;
+  background: url("italie.jpg") top center;
   background-size: cover;
   transform: translateZ(-1px) scale(2.1);
   min-height: 100%;
@@ -46,8 +45,9 @@ section {
 }
 
 .section1 {
-  background: #372823;
+  background: #101016;
   z-index: 1;
+  min-height: 55vh;
 }
 
 .section2::before {
@@ -71,18 +71,92 @@ h1,p {
   left: 50%;
   transform: translateZ(-1px) scale(2) translate(-25%, -25%);
 }
+body
+{
+  scroll-behavior: smooth;
+}
+#logo
+{
+  margin-top: 1%;
+  width:196px;
+  height: 106px;
+}
 h1
 {
   letter-spacing: 150px;
+  line-height: 200px;
+}
+h2
+{
+
 }
 .hone
 {
-  top:25%;
-  letter-spacing: normal;
+  top:20%;
+  letter-spacing: 60px;
+}
+.hone2
+{
+  top:20%;
+  letter-spacing: 60px;
+}
+#philo
+{
+  width:100%;
 }
 p{
   top: 50%;
-  font-size: 2rem;
+  font-size: 1.5rem;
+  color:#B3BA98;
+  text-align: left;
+}
+#collections
+{
+  height: 250px;
+}
+.photos1
+{
+  margin-top:10%;
+  height: 491px;
+  width: 1380px;
+  margin-left: 1%;
+}
+.photos1:hover
+{
+  opacity:0.75;
+}
+.photos2
+{
+  margin-top: 10%;
+  margin-left: 74%;
+  width: 453px;
+  height: 490px;
+}
+.photos2:hover
+{
+  opacity:0.75;
+}
+.photos3
+{
+  margin-top:36.5%;
+  margin-left: 1%;
+  height: 494px;
+  width: 395px;
+}
+.photos3:hover
+{
+  opacity:0.75;
+}
+.photos4
+{
+  margin-top:36.5%;
+  margin-left: 25%;
+  height: 494px;
+  width: 395px;
+}
+.photos4:hover
+{
+  opacity:0.75;
 }
 .section1 h1, .section1 p {
   z-index: 3;
@@ -119,6 +193,7 @@ body {
   transform-style: preserve-3d;
   font-size: 62.5%;
   font-family: 'Overlock', Arial, Helvetica, sans-serif;
+  background-color: #101016;
 }
 
 .author {
@@ -143,4 +218,8 @@ body {
 .author:hover,
 .author:active {
   box-shadow: 0 0 10px #33333350;
+}
+h3
+{
+
 }

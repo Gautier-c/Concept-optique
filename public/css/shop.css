@@ -19,3 +19,7 @@ img {
 .footShopImg i {
     font-size: 2em;
 }
+
+.storeItems, .storeImg{
+    height: auto;
+}

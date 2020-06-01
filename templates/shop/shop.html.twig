@@ -9,159 +9,25 @@
 {% endblock %}
 
 <div class="d-flex flex-column align-items-center">
-    <h1 class="generalStyle">Toutes les boutiques</h1>
+    <h1 class="generalStyle p-5">Toutes les boutiques</h1>
 
     <div class="store row col-12 py-5">
-        <div class="storeItems col-3 d-flex flex-column pb-4 align-items-center">
-            <div class="storeImg">
-                <img src="https://import.w3lead.com/files/jimmyfairly/store-thumbnail-24.jpg">
-                <div class="storeHover d-none">
-                    <div class="storeHours">
-                        <ul>
-                            <li>Lun : 13h-19h</li>
-                            <li>Mar : 11h-19h</li>
-                            <li>Mer : 11h-19h</li>
-                            <li>Jeu : 11h-19h</li>
-                            <li>Ven : 11h-19h</li>
-                            <li>Sam : 11h-19h</li>
-                            <li>Dim : Fermé</li>
-                        </ul>
+        {% for shop in shops %}
+            <div class="storeItems col-3 d-flex flex-column pb-4 align-items-center">
+                <div class="row">
+                    <div class="storeImg col-12 d-flex justify-content-center">
+                        <img src="https://import.w3lead.com/files/jimmyfairly/store-thumbnail-24.jpg">
+                    </div>
+                    <div class="offset-1 col-11 pl-4">
+                        <a class="" href="/pages/jimmy-fairly-annecy">
+                            <div class="storeName">{{shop.name|capitalize}}</div>
+                            <div class="storeAdress">{{shop.address|capitalize}}</div>
+                            <span class="storeLink">Voir en détail</span>
+                        </a>
                     </div>
                 </div>
             </div>
-            <div class="">
-                <a class="" href="/pages/jimmy-fairly-annecy">
-                    <div class="storeName">Jimmy Fairly - Annecy</div>
-                    <div class="storeAdress">12 Rue Carnot, 74000, Annecy</div>
-                    <span class="storeLink">Voir en détail</span>
-                </a>
-            </div>
-        </div>
-        <div class="storeItems col-3 d-flex flex-column pb-4 align-items-center">
-            <div class="storeImg">
-                <img src="https://import.w3lead.com/files/jimmyfairly/store-thumbnail-24.jpg">
-                <div class="storeHover d-none">
-                    <div class="storeHours">
-                        <ul>
-                            <li>Lun : 13h-19h</li>
-                            <li>Mar : 11h-19h</li>
-                            <li>Mer : 11h-19h</li>
-                            <li>Jeu : 11h-19h</li>
-                            <li>Ven : 11h-19h</li>
-                            <li>Sam : 11h-19h</li>
-                            <li>Dim : Fermé</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="">
-                <a class="" href="/pages/jimmy-fairly-annecy">
-                    <div class="storeName">Jimmy Fairly - Annecy</div>
-                    <div class="storeAdress">12 Rue Carnot, 74000, Annecy</div>
-                    <span class="storeLink">Voir en détail</span>
-                </a>
-            </div>
-        </div>
-        <div class="storeItems col-3 d-flex flex-column pb-4 align-items-center">
-            <div class="storeImg">
-                <img src="https://import.w3lead.com/files/jimmyfairly/store-thumbnail-24.jpg">
-                <div class="storeHover d-none">
-                    <div class="storeHours">
-                        <ul>
-                            <li>Lun : 13h-19h</li>
-                            <li>Mar : 11h-19h</li>
-                            <li>Mer : 11h-19h</li>
-                            <li>Jeu : 11h-19h</li>
-                            <li>Ven : 11h-19h</li>
-                            <li>Sam : 11h-19h</li>
-                            <li>Dim : Fermé</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="">
-                <a class="" href="/pages/jimmy-fairly-annecy">
-                    <div class="storeName">Jimmy Fairly - Annecy</div>
-                    <div class="storeAdress">12 Rue Carnot, 74000, Annecy</div>
-                    <span class="storeLink">Voir en détail</span>
-                </a>
-            </div>
-        </div>
-        <div class="storeItems col-3 d-flex flex-column pb-4 align-items-center">
-            <div class="storeImg">
-                <img src="https://import.w3lead.com/files/jimmyfairly/store-thumbnail-24.jpg">
-                <div class="storeHover d-none">
-                    <div class="storeHours">
-                        <ul>
-                            <li>Lun : 13h-19h</li>
-                            <li>Mar : 11h-19h</li>
-                            <li>Mer : 11h-19h</li>
-                            <li>Jeu : 11h-19h</li>
-                            <li>Ven : 11h-19h</li>
-                            <li>Sam : 11h-19h</li>
-                            <li>Dim : Fermé</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="">
-                <a class="" href="/pages/jimmy-fairly-annecy">
-                    <div class="storeName">Jimmy Fairly - Annecy</div>
-                    <div class="storeAdress">12 Rue Carnot, 74000, Annecy</div>
-                    <span class="storeLink">Voir en détail</span>
-                </a>
-            </div>
-        </div>
-        <div class="storeItems col-3 d-flex flex-column pb-4 align-items-center">
-            <div class="storeImg">
-                <img src="https://import.w3lead.com/files/jimmyfairly/store-thumbnail-24.jpg">
-                <div class="storeHover d-none">
-                    <div class="storeHours">
-                        <ul>
-                            <li>Lun : 13h-19h</li>
-                            <li>Mar : 11h-19h</li>
-                            <li>Mer : 11h-19h</li>
-                            <li>Jeu : 11h-19h</li>
-                            <li>Ven : 11h-19h</li>
-                            <li>Sam : 11h-19h</li>
-                            <li>Dim : Fermé</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="">
-                <a class="" href="/pages/jimmy-fairly-annecy">
-                    <div class="storeName">Jimmy Fairly - Annecy</div>
-                    <div class="storeAdress">12 Rue Carnot, 74000, Annecy</div>
-                    <span class="storeLink">Voir en détail</span>
-                </a>
-            </div>
-        </div>
-        <div class="storeItems col-3 d-flex flex-column pb-4 align-items-center">
-            <div class="storeImg">
-                <img src="https://import.w3lead.com/files/jimmyfairly/store-thumbnail-24.jpg">
-                <div class="storeHover d-none">
-                    <div class="storeHours">
-                        <ul>
-                            <li>Lun : 13h-19h</li>
-                            <li>Mar : 11h-19h</li>
-                            <li>Mer : 11h-19h</li>
-                            <li>Jeu : 11h-19h</li>
-                            <li>Ven : 11h-19h</li>
-                            <li>Sam : 11h-19h</li>
-                            <li>Dim : Fermé</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="">
-                <a class="" href="/pages/jimmy-fairly-annecy">
-                    <div class="storeName">Jimmy Fairly - Annecy</div>
-                    <div class="storeAdress">12 Rue Carnot, 74000, Annecy</div>
-                    <span class="storeLink">Voir en détail</span>
-                </a>
-            </div>
-        </div>
+        {% endfor %}
     </div>
     
     <section id="sectionFootShop" class="footShop p-5" >

@@ -26,7 +26,7 @@ img {
 }
 
 .allShopTitle {
-    margin-top: 150px;
+    margin-top: 100px;
     margin-bottom: 150px;
     border-left: 5px solid;
 }
@@ -39,3 +39,8 @@ img {
     font-size: 4em;
     font-weight: 500;
 }
+
+#shops_logoCo {
+    height: 100px;
+}
+

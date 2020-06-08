@@ -9,7 +9,7 @@ use App\Entity\Shop;
 class ShopsController extends AbstractController
 {
     /**
-     * @Route("/shops", name="shops_show")
+     * @Route("/magasins", name="shops_show")
      */
     public function show()
     {

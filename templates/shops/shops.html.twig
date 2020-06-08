@@ -1,6 +1,6 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Boutiques {% endblock %}
+{% block title %}Magasins {% endblock %}
 
 {% block body %}
 
@@ -8,11 +8,11 @@
 	<link rel="stylesheet" href="{{ asset('/css/shops.css') }}">
 {% endblock %}
 
-<div class="row d-flex flex-column align-items-center pt-5">
+<div class="row d-flex flex-column align-items-center">
     <div class="allShopTitle d-flex flex-column align-items-center py-0 px-5">
-        <h1 class="generalStyle "py-5"">Toutes les boutiques</h1>
+        <h1 class="generalStyle "py-5"">Toutes les magasins</h1>
         <p>2020</p>
-        <p class="mb-0">{{shops|length}} boutiques</p>
+        <p class="mb-0">{{shops|length}} magasins</p>
     </div>
 
     <div class="store col-md-12 col-lg-10 col-xl-8 pb-5">

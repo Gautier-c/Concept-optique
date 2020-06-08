@@ -5,7 +5,8 @@
                                 /* SHOP */
 
 img {
-    height: 200px;
+    max-width: 100%;
+	height: auto;
 }
 
 .storeName {
@@ -20,6 +21,21 @@ img {
     font-size: 2em;
 }
 
-.storeItems, .storeImg{
+.storeItems, .storeImg {
     height: auto;
+}
+
+.allShopTitle {
+    margin-top: 150px;
+    margin-bottom: 150px;
+    border-left: 5px solid;
+}
+
+.allShopTitle p {
+    font-size: 2em;
+}
+
+.allShopTitle h1 {
+    font-size: 4em;
+    font-weight: 500;
 }

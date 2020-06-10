@@ -1,0 +1,69 @@
+
+
+                                /* SHOP */
+                                /* SHOP */
+                                /* SHOP */
+
+img {
+    max-width: 100%;
+	height: auto;
+}
+
+.storeName {
+    font-weight: 500;
+}
+
+.footShopImg img {
+    height: auto;
+}
+
+.footShopImg i {
+    font-size: 2em;
+}
+
+.storeItems, .storeImg {
+    height: auto;
+}
+
+.allShopTitle {
+    margin-top: 100px;
+    margin-bottom: 150px;
+    border-left: 5px solid;
+}
+
+.allShopTitle p {
+    font-size: 2em;
+}
+
+.allShopTitle h1 {
+    font-size: 4em;
+    font-weight: 500;
+}
+
+#shops_logoCo {
+    height: 100px;
+}
+
+.card {
+    border-radius: 0rem!important;
+    -webkit-border-radius: 0rem!important;
+    -moz-border-radius: 0rem!important;
+    -ms-border-radius: 0rem!important;
+    -o-border-radius: 0rem!important;
+    border-color: white!important;
+    background-color: transparent!important;
+    font-size: 1.5em!important;
+    
+}
+
+.card-header {
+    border-bottom: 1px solid white;
+}
+
+.card-footer {
+    border-top: 1px solid white;
+}
+
+.describe {
+    text-decoration: underline;
+}

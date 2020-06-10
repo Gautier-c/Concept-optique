@@ -5,34 +5,38 @@
 {% block body %}
 
 {% block stylesheets %}
-	<link rel="stylesheet" href="{{ asset('/css/shops.css') }}">
+	<link rel="stylesheet" href="{{ asset('/css/shop.css') }}">
 {% endblock %}
 
 <div class="row d-flex flex-column align-items-center ">
     <div class="allShopTitle d-flex flex-column align-items-center py-0 px-5">
-        <h1 class="generalStyle "py-5"">Toutes les boutiques</h1>
+        <h1 class="generalStyle "py-5"">Concept Optique {{shop.name|capitalize}}</h1>
         <p>2020</p>
-        <p class="mb-0">{{shops|length}} boutiques</p>
     </div>
 
     <div class="store col-md-12 col-lg-10 col-xl-8 pb-5">
         <div class="row">
-            {% for shop in shops %}
-                <div class="storeItems col-md-12 col-lg-6 col-xl-4 d-flex flex-column pb-4 align-items-center">
-                    <div class="">
-                        <div class="storeImg col-12 pl-4 d-flex justify-start">
-                            <img src="{{ asset('/img/'~shop.imageName|e) }}" alt="Devanture du magasion {{shop.name}}">
-                        </div>
-                        <div class="col-12 pl-4">
-                            <a class="" href="/pages/jimmy-fairly-annecy">
-                                <div class="storeName">{{shop.name|capitalize}}</div>
-                                <div class="storeAdress">{{shop.address|capitalize}}</div>
-                                <span class="storeLink">Voir en détail</span>
-                            </a>
-                        </div>
-                    </div>
+            <div class="storeImg col-8 d-flex justify-start">
+                <img src="{{ asset('/img/'~shop.imageName|e) }}" alt="Devanture du magasin {{shop.name}}">
+            </div>
+            <div class="card border-primary col-4">
+                <div class="card-header">{{shop.name|capitalize}}</div>
+                <ul class="card-body">
+                    <li class="describe">Adresse:</li>
+                    <li class="card-title">{{shop.address|capitalize}}</li>
+                    </br>
+                    <li class="describe">Téléphone:</li>
+                    {% set phone = shop.phoneNumber|split('',2)%}
+                    {% set phone = phone|join('/') %}
+                    <li class="card-text">{{phone}}</li>
+                    <a class="" href="/pages/jimmy-fairly-annecy">
+                        Contactez-nous
+                    </a>
+                </ul>
+                <div class="card-footer">
+                    <p>Google Map</p>
                 </div>
-            {% endfor %}
+            </div>
         </div>
     </div>
     

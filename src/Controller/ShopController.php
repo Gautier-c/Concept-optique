@@ -2,18 +2,25 @@
 
 namespace App\Controller;
 
-use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
+use App\Entity\Shop;
 use Symfony\Component\Routing\Annotation\Route;
+use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 
 class ShopController extends AbstractController
 {
     /**
-     * @Route("/shop{id}", name="shop_show")
+     * @Route("/magasin/{id}", name="shop_show")
      */
-    public function show()
+    public function show($id)
     {
-        return $this->render('shop/index.html.twig', [
-            'controller_name' => 'ShopController',
+        $repo = $this->getDoctrine()->getRepository(Shop::class);
+
+        $shop = $repo->find($id);
+
+        //dd($shop);
+
+        return $this->render('shop/shop.html.twig', [
+            'shop'      => $shop,
         ]);
     }
 }

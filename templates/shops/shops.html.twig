@@ -10,7 +10,7 @@
 
 <div class="row d-flex flex-column align-items-center">
     <div class="allShopTitle d-flex flex-column align-items-center py-0 px-5">
-        <h1 class="generalStyle "py-5"">Toutes les magasins</h1>
+        <h1 class="generalStyle "py-5"">Tous les magasins</h1>
         <p>2020</p>
         <p class="mb-0">{{shops|length}} magasins</p>
     </div>
@@ -21,10 +21,10 @@
                 <div class="storeItems col-md-12 col-lg-6 col-xl-4 d-flex flex-column pb-4 align-items-center">
                     <div class="">
                         <div class="storeImg col-12 pl-4 d-flex justify-start">
-                            <img src="{{ asset('/img/'~shop.imageName|e) }}" alt="Devanture du magasion {{shop.name}}">
+                            <img src="{{ asset('/img/'~shop.imageName|e) }}" alt="Devanture du magasin {{shop.name}}">
                         </div>
                         <div class="col-12 pl-4">
-                            <a class="" href="/pages/jimmy-fairly-annecy">
+                            <a class="" href="#">
                                 <div class="storeName">{{shop.name|capitalize}}</div>
                                 <div class="storeAdress">{{shop.address|capitalize}}</div>
                                 <span class="storeLink">Voir en détail</span>

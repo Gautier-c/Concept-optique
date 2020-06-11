@@ -1,128 +1,246 @@
+@import "https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap";
+/*************************************************************
+  HEADER
+**************************************************************/
+#logo
+{
+  width: 196px;
+  height: 106px;
+  margin-top: 0px;
+}
+#CO
+{
+  font-family: 'Roboto', sans-serif;
+  color: white;
+  margin-top: 15vh;
+  font-weight: bold;
+  font-size: 5em;
+  letter-spacing: 100px;
+  margin-right: -50px;
+  line-height: 200px;
+}
+ul
+{
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 24px;
+  margin-right: 25px;
+  position: sticky;
+  top:50px;
+  z-index: 999;
+}
+li
+{
+  list-style: none;
+  font-size: 1.5em;
+  margin-left: 10px;
+}
+a
+{
+  text-decoration: none;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+}
+a:hover
+{
+  text-decoration: underline white;
+}
+
+
+
+header {
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+  position: relative;
+  -webkit-transform-style: inherit;
+          transform-style: inherit;
+  z-index: -1;
+  text-align: center;
+}
+
+header::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  display: block;
+  background: url(unnamed.jpg) top center;
+  background-size: cover;
+  -webkit-transform: translateZ(-1px) scale(2.1);
+          transform: translateZ(-1px) scale(2.1);
+  min-height: 100%;
+  z-index: -2;
+}
+
+
+/*************************************************************
+  SECTIONS
+**************************************************************/
+section {
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+  position: relative;
+  -webkit-transform-style: inherit;
+          transform-style: inherit;
+}
+
+.section1 {
+  background: #271001;
+  box-shadow: 0 0 20px #333;
+  z-index: 1;
+  min-height: 55vh;
+}
+.section1-bis
+{
+  background: #271001;
+  box-shadow: 0 0 20px #333;
+  z-index: 1;
+  min-height: 200vh;
+}
+.section2
+{
+  min-height: 80vh;
+}
+.section2::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  display: block;
+  background: url('concept3.JPG') top center;
+  background-size: cover;
+  -webkit-transform: translateZ(-.5px) scale(1.6);
+          transform: translateZ(-.5px) scale(1.6);
+  z-index: -1;
+}
+
+/*************************************************************
+  HEADINGS
+**************************************************************/
+h2 {
+  font-family: 'Roboto', sans-serif;
+  color:white;
+  font-size: 3rem;
+  font-weight: 100;
+  position: absolute;
+  padding: 1rem;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateZ(-1px) scale(2) translate(-25%, -25%);
+          transform: translateZ(-1px) scale(2) translate(-25%, -25%);
+}
+#s1-content{
+  font-family: 'Roboto', sans-serif;
+  color:white;
+  font-size: 3rem;
+  font-weight: 100;
+  position: absolute;
+  padding: 1rem;
+  box-shadow: 0 0 20px #333;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateZ(-1px) scale(2) translate(-25%, -25%);
+          transform: translateZ(-1px) scale(2) translate(-25%, -25%);
+}
+#philo
+{
+  top: 20%;
+  left:50vw;
+  padding-left: 200px;
+}
+#tiret
+{
+  font-size: 10em;
+  font-weight: bold;
+  top:30%;
+  left:50vw;
+}
+#text-philo
+{
+  font-size: 2em;
+  top: 60%;
+  left:65vw;
+}
+#since
+{
+  font-size: 2em;
+  top:40%;
+  left:25vw;
+}
+
+#s2-content{
+  font-family: 'Roboto', sans-serif;
+  color:white;
+  font-size: 3rem;
+  font-weight: 100;
+  position: absolute;
+  padding: 1rem;
+  box-shadow: 0 0 20px #333;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateZ(-1px) scale(2) translate(-25%, -25%);
+          transform: translateZ(-1px) scale(2) translate(-25%, -25%);
+}
+#collections
+{
+  top:20%;
+}
+
+
+.section1 h2{
+  z-index: 3;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  box-shadow: none;
+}
+.section1 #s1-content{
+  z-index: 3;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  box-shadow: none;
+}
+.section1-bis #s2-content{
+  z-index: 3;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  box-shadow: none;
+}
+
+
+.section2 h2 {
+  -webkit-transform: translateZ(-.3px) scale(1.3) translate(-39%, -39%);
+          transform: translateZ(-.3px) scale(1.3) translate(-39%, -39%);
+  z-index: 3;
+}
+
+/*************************************************************
+  BASIC STYLES
+**************************************************************/
+*,
+*::before,
+*::after,
+:root {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 @import 'https://fonts.googleapis.com/css?family=Overlock:400,400i,700|Oleo+Script';
 
 html {
-  height: 100%;
   overflow: hidden;
-}
-
-body { 
-  margin:0;
-  padding:0;
-    perspective: 1px;
-    transform-style: preserve-3d;
   height: 100%;
-  overflow-y: scroll;
+}
+
+body {
+  margin: 0;
   overflow-x: hidden;
+  overflow-y: scroll;
+  height: 100%;
+  -webkit-perspective: 1px;
+          perspective: 1px;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  font-size: 62.5%;
   font-family: 'Overlock', Arial, Helvetica, sans-serif;
-}
-
-h1 {
-   font-size: 250%;
-   color: white;
-}
-
-p {
-  font-size: 140%;
-  line-height: 150%;
-  color: white;
-}
-
-.slide {
-  position: relative;
-  padding: 25vh 10%;
-  min-height: 100vh;
-  width: 100vw;
-  box-sizing: border-box;
-  box-shadow: 0 -1px 10px rgba(0, 0, 0, .7);
-	transform-style: inherit;
-}
-
-img {
-  position: absolute;
-  top: 50%;
-  left: 35%;
-  width: 320px;
-  height: 240px;
-  transform: translateZ(.25px) scale(.75) translateX(-94%) translateY(-100%) rotate(2deg);
-  padding: 10px;
-  border-radius: 5px;
-  background: rgba(0, 0, 0, .7);
-  box-shadow: 0 0 8px rgba(0, 0, 0, .7);
-}
-
-img:last-of-type {
-  transform: translateZ(.4px) scale(.6) translateX(-104%) translateY(-40%) rotate(-5deg);
-}
-
-.slide:before {
-  content: "";
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  box-shadow: 0 0 8px 1px rgba(0, 0, 0, .7);
-}
-
-.title {
-  width: 50%;
-  padding: 5%;
-  border-radius: 5px;
-  background: rgba(0, 0, 0, .7);
-  box-shadow: 0 0 8px rgba(0, 0, 0, .7);
-}
-
-.slide:nth-child(2n) .title {
-  margin-left: 0;
-  margin-right: auto;
-}
-
-.slide:nth-child(2n+1) .title {
-  margin-left: auto;
-  margin-right: 0;
-}
-
-.slide, .slide:before {
-  background: 50% 50% / cover;  
-}
-
-.header {
-  text-align: center;
-  font-size: 175%;
-  color: #fff;
-  text-shadow: 0 2px 2px #000;
-}
-
-#title {
-    background: url("italie.jpg") top center;
-  z-index:2;
-}
-
-#title h1 {
- transform: translateZ(.25px) scale(.75);
- transform-origin: 50% 100%;
- color: white;
- font-size: 4rem;
- letter-spacing: 150px;
-  line-height: 200px;
-  margin-right: -150px;
-}
-
-#slide1:before {
-  background-image: url("planete.jpg");
-  transform: translateZ(-1px) scale(2);
-}
-
-#slide2 {
-  background-image: url("USA.jpg");
-  z-index:2;
-}
-
-#slide3:before {
-  background-image: url("test.jpg");
-  transform: translateZ(-1px) scale(2);
-}
-
-#slide4 {
-  background: #222;
 }

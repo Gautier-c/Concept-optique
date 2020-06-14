@@ -37,10 +37,24 @@ img {
 
 .allShopTitle h1 {
     font-size: 4em;
-    font-weight: 500;
+    font-weight: 300;
 }
 
 #shops_logoCo {
     height: 100px;
+}
+
+.storeImg {
+    position: relative;
+}
+
+.div-shop-name {
+    position: absolute;
+    width: 87%;
+}
+
+.shop-name {
+    font-size: 2.5em;
+    font-weight: 300;
 }
 

@@ -10,16 +10,15 @@
 
 <div class="row d-flex flex-column align-items-center ">
     <div class="allShopTitle d-flex flex-column align-items-center py-0 px-5">
-        <h1 class="generalStyle "py-5"">Concept Optique {{shop.name|capitalize}}</h1>
-        <p>2020</p>
+        <h1 class="generalStyle "py-5"">CONCEPT OPTIQUE {{shop.name|capitalize}}</h1>
     </div>
 
     <div class="store col-md-12 col-lg-10 col-xl-8 pb-5">
         <div class="row">
-            <div class="storeImg col-8 d-flex justify-start">
+            <div class="storeImg col-7 d-flex justify-start">
                 <img src="{{ asset('/img/'~shop.imageName|e) }}" alt="Devanture du magasin {{shop.name}}">
             </div>
-            <div class="card border-primary col-4">
+            <div class="card border-primary offset-1 col-4">
                 <div class="card-header">{{shop.name|capitalize}}</div>
                 <ul class="card-body">
                     <li class="describe">Adresse:</li>

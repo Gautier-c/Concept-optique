@@ -10,18 +10,20 @@
 
 <div class="row d-flex flex-column align-items-center">
     <div class="allShopTitle d-flex flex-column align-items-center py-0 px-5">
-        <h1 class="generalStyle "py-5"">Tous les magasins</h1>
-        <p>2020</p>
+        <h1 class="generalStyle "py-5"">Nos magasins</h1>
         <p class="mb-0">{{shops|length}} magasins</p>
     </div>
 
-    <div class="store col-md-12 col-lg-10 col-xl-8 pb-5">
+    <div class="store col-md-12 col-lg-12 col-xl-10 pb-5">
         <div class="row">
             {% for shop in shops %}
-                <div class="storeItems col-md-12 col-lg-6 col-xl-4 d-flex flex-column pb-4 align-items-center">
-                    <div class="">
-                        <div class="storeImg col-12 pl-4 d-flex justify-start">
+                <div class="storeItems col-sm-12 col-md-6 col-lg-4 col-xl-3 d-flex flex-column pb-4 align-items-center">
+                    <div class="animated">
+                        <div class="storeImg col-12 pl-4 d-flex justify-start align-items-center">
                             <img src="{{ asset('/img/'~shop.imageName|e) }}" alt="Devanture du magasin {{shop.name}}">
+                            <div class="div-shop-name d-flex justify-content-center align-items-center text-center">
+                                <h2 class="shop-name">{{shop.name|upper}}</h2>
+                            </div>
                         </div>
                         <div class="col-12 pl-4">
                             <a class="" href="#">

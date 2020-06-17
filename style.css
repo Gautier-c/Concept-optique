@@ -1,30 +1,28 @@
-@import "https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap";
+@import "https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap";
 /*************************************************************
   HEADER
 **************************************************************/
 #logo
 {
-  width: 196px;
-  height: 106px;
-  margin-top: 0px;
+  max-width: 150px;
 }
 #CO
 {
-  font-family: 'Roboto', sans-serif;
+  font-size: 5vw;
   color: white;
-  margin-top: 15vh;
-  font-weight: bold;
-  font-size: 5em;
-  letter-spacing: 100px;
-  margin-right: -50px;
-  line-height: 200px;
+  font-weight: 500;
+  line-height: 30vh;
+  letter-spacing: 10vw;
+  margin-right: -10vw;
+  overflow: hidden;
+  margin-top: 10vh;
 }
 ul
 {
   display: flex;
   justify-content: flex-end;
   margin-top: 24px;
-  margin-right: 25px;
+  margin-right: 40px;
   position: sticky;
   top:50px;
   z-index: 999;
@@ -32,9 +30,10 @@ ul
 li
 {
   list-style: none;
-  font-size: 1.5em;
-  margin-left: 10px;
+  font-size: 1.2em;
+  margin-left: 40px;
 }
+
 a
 {
   text-decoration: none;
@@ -51,12 +50,14 @@ a:hover
 header {
   position: relative;
   min-height: 100vh;
+  max-width: 100vw;
   width: 100%;
   position: relative;
   -webkit-transform-style: inherit;
           transform-style: inherit;
   z-index: -1;
   text-align: center;
+
 }
 
 header::before {
@@ -64,7 +65,7 @@ header::before {
   position: absolute;
   top: 0; left: 0; right: 0; bottom: 0;
   display: block;
-  background: url(unnamed.jpg) top center;
+  background: url(photoAccueil.jpg) top center;
   background-size: cover;
   -webkit-transform: translateZ(-1px) scale(2.1);
           transform: translateZ(-1px) scale(2.1);
@@ -86,14 +87,72 @@ section {
 }
 
 .section1 {
-  background: #271001;
+  background: #1B1812;
   box-shadow: 0 0 20px #333;
   z-index: 1;
   min-height: 55vh;
+  display:flex;
+  justify-content: center;
+}
+
+/* !!!!!!!!!!!!!!! LOGO CO ONGLET PHILO !!!!!!!!!!! */
+#s1-container
+{
+  display:flex;
+  align-items: center;
+}
+#s1-content
+{
+  margin-left: -30vw;;
+}
+
+#s1-logo #s1-text
+{
+  display:flex;
+  align-items: center;
+} 
+#smallLogo
+{
+  height: 5vh;
+}
+#s1-tiret{
+  display:flex;
+  align-items: center;
+  margin-top:3vh;
+}
+#smallLogoTiret
+{
+  font-size: 1.5em;
+}
+
+/* !!!!!!!!!!!!!!!!!!!! TEXT PHILO ONGLET PHILO !!!!!!!!!!!!!!!! */
+#s1-text
+{
+  margin-left:35vw;
+  color:white;
+}
+#title-philo #text-philo
+{
+  display:text;
+  align-items: center;
+}
+#philo
+{
+  font-size: 4em;
+  font-weight: 200;
+  letter-spacing: 1vw;
+}
+#text-philo
+{
+  margin-top:5vh;
+}
+#text-philo, p
+{
+  font-size: 1.5em;
 }
 .section1-bis
 {
-  background: #271001;
+  background: #1B1812;
   box-shadow: 0 0 20px #333;
   z-index: 1;
   min-height: 200vh;
@@ -142,31 +201,7 @@ h2 {
   -webkit-transform: translateZ(-1px) scale(2) translate(-25%, -25%);
           transform: translateZ(-1px) scale(2) translate(-25%, -25%);
 }
-#philo
-{
-  top: 20%;
-  left:50vw;
-  padding-left: 200px;
-}
-#tiret
-{
-  font-size: 10em;
-  font-weight: bold;
-  top:30%;
-  left:50vw;
-}
-#text-philo
-{
-  font-size: 2em;
-  top: 60%;
-  left:65vw;
-}
-#since
-{
-  font-size: 2em;
-  top:40%;
-  left:25vw;
-}
+
 
 #s2-content{
   font-family: 'Roboto', sans-serif;
@@ -181,11 +216,6 @@ h2 {
   -webkit-transform: translateZ(-1px) scale(2) translate(-25%, -25%);
           transform: translateZ(-1px) scale(2) translate(-25%, -25%);
 }
-#collections
-{
-  top:20%;
-}
-
 
 .section1 h2{
   z-index: 3;
@@ -243,4 +273,5 @@ body {
           transform-style: preserve-3d;
   font-size: 62.5%;
   font-family: 'Overlock', Arial, Helvetica, sans-serif;
+  scroll-behavior: smooth;
 }

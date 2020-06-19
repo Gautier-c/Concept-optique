@@ -136,7 +136,7 @@ section {
   display:text;
   align-items: center;
 }
-#philo
+#hone
 {
   font-size: 4em;
   font-weight: 200;
@@ -145,6 +145,7 @@ section {
 #text-philo
 {
   margin-top:5vh;
+  width: 40vw;
 }
 #text-philo, p
 {
@@ -157,6 +158,115 @@ section {
   z-index: 1;
   min-height: 200vh;
 }
+.section1-bis2
+{
+  background: #1B1812;
+  box-shadow: 0 0 20px #333;
+  z-index: 1;
+  min-height: 200vh;
+}
+
+
+/* !!!!!!!!!!!! SECTION COLLECTIONS MISE EN FORME !!!!!!!!!!!!!!!!!! */
+.s1-bis
+{
+  display:flex;
+  align-items: center;
+  color: white;
+}
+.content{
+  flex-direction: column;
+}
+.header
+{
+  margin-top: 10vh;
+}
+.txt
+{
+  flex-direction: column;
+  margin-left: 5vw;
+}
+.collections h1
+{
+  width:40vw
+
+}
+.texte
+{
+  font-size: 1.5em;
+  margin-top:5vh;
+  width: 40vw;
+}
+.date
+{
+  margin-left:20vw;
+}
+.date2020
+{
+  flex-direction: column;
+  font-size: 1.5em;
+}
+#datebis
+{
+  margin-top:3vh;
+}
+.content-img
+{
+  width:80vw;
+  flex-direction: column;
+}
+.imgheader
+{
+  width: 35vw;
+  height: auto;
+}
+.img-header1, .img-header2
+{
+ margin-top: 10vh;
+}
+.img-header2
+{
+  margin-left: 10vw;
+}
+.img-footer
+{
+  width:80vw;
+  margin-bottom: 10vh;
+}
+.img-footer1
+{
+  margin-top: 10vh;
+  width: 50vw;
+}
+#imgfooter1
+{
+  width:50vw;
+  height: auto;
+}
+.img-footer2-3
+{
+  flex-direction: column;
+  margin-top: 10vh;
+  width:50vw;
+  height: auto;
+  margin-left:10vw;
+}
+.img-footer3
+{
+padding-top:10vh;
+}
+
+.test
+{
+  width:20vw;
+  height: auto;
+  
+}
+
+
+
+
+
 .section2
 {
   min-height: 80vh;
@@ -166,7 +276,23 @@ section {
   position: absolute;
   top: 0; left: 0; right: 0; bottom: 0;
   display: block;
-  background: url('concept3.JPG') top center;
+  background: url('fauteuil.jpg') top center;
+  background-size: cover;
+  -webkit-transform: translateZ(-.5px) scale(1.6);
+          transform: translateZ(-.5px) scale(1.6);
+  z-index: -1;
+}
+
+.section2-bis
+{
+  min-height: 80vh;
+}
+.section2-bis::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  display: block;
+  background: url('banniere.JPG') top center;
   background-size: cover;
   -webkit-transform: translateZ(-.5px) scale(1.6);
           transform: translateZ(-.5px) scale(1.6);
@@ -224,12 +350,6 @@ h2 {
   box-shadow: none;
 }
 .section1 #s1-content{
-  z-index: 3;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  box-shadow: none;
-}
-.section1-bis #s2-content{
   z-index: 3;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);

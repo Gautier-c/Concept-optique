@@ -14,7 +14,11 @@
         <p class="mb-0">{{shops|length}} magasins</p>
     </div>
 
-    <div class="store col-md-12 col-lg-12 col-xl-10 pb-5">
+    <div class="gmap d-flex justify-content-center mb-5">
+        <iframe src="https://www.google.com/maps/d/u/2/embed?mid=1NEo6VK9mK4_cJtI3EIUTASzi_-z8fzC-" width="1500" height="500"></iframe>
+    </div>
+
+    <div class="store col-md-12 col-lg-12 col-xl-10 pb-5 mt-3">
         <div class="row">
             {% for shop in shops %}
                 <div class="storeItems col-sm-12 col-md-6 col-lg-4 col-xl-3 d-flex flex-column pb-4 align-items-center">
@@ -26,7 +30,7 @@
                             </div>
                         </div>
                         <div class="col-12 pl-4">
-                            <a class="" href="#">
+                            <a class="" href="{{ path('shop_show', {'id':shop.id}) }}">
                                 <div class="storeName">{{shop.name|capitalize}}</div>
                                 <div class="storeAdress">{{shop.address|capitalize}}</div>
                                 <span class="storeLink">Voir en détail</span>

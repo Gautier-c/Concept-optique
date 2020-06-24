@@ -1,4 +1,4 @@
-{% extends 'base.html.twig' %}
+{% extends 'base_home.html.twig' %}
 
 {% block title %}Accueil {% endblock %}
 
@@ -7,14 +7,161 @@
 {% block stylesheets %}
 	<link rel="stylesheet" href="{{ asset('/css/home.css') }}">
 {% endblock %}
+        <ul class="">
+          <li class="">
+            <a class="" href="{{ path('home_show') }}">Accueil</a>
+          </li>
+          <li class="">
+            <a class="" href="#link1">Philosophie</a>
+          </li>
+          <li class="">
+            <a class="" href="#">Collections</a>
+          </li>
+          <li class="">
+            <a class="" href="#link2">Offres</a>
+          </li>
+          <li class="">
+              <a class="" href="{{ path('shops_show') }}">Magasins</a>
+          </li>
+          <li class="">
+              <a class="" href="#">Contact</a>
+          </li>
+          <li class="">
+              <a class="" href="#">Franchise</a>
+          </li>
+        </ul>
+        <header id="link0">
+            <img id="logo" src="{{ asset('/img/home/newlogo.png') }}">
+            <h1 id="CO">CONCEPT <br>OPTIQUE</h2>
+        </header>
 
-<div class="example-wrapper">
-    <h1>Hello {{ controller_name }}! ✅</h1>
-
-    This friendly message is coming from:
-    <ul>
-        <li>Your controller at <code><a href="{{ 'C:/code/concept_optique/concept_optique/src/Controller/HomeController.php'|file_link(0) }}">src/Controller/HomeController.php</a></code></li>
-        <li>Your template at <code><a href="{{ 'C:/code/concept_optique/concept_optique/templates/home/index.html.twig'|file_link(0) }}">templates/home/index.html.twig</a></code></li>
-    </ul>
-</div>
+    <section class="section1" id="philosophie">
+      <div id="s1-container">
+        <div id="s1-content">
+          <div id="s1-logo">
+            <img id="smallLogo" src="{{ asset('/img/home/logoCO.png') }}">
+          </div>
+          <div id="s1-tiret">
+            <h2 id="smallLogoTiret">_</h2>
+          </div>
+        </div>
+        <div id="s1-text">
+          <div id="title-philo">
+            <h1 class="hone">PHILOSOPHIE<br>_</h1>
+          </div>
+          <div id="text-philo">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit maiores corrupti dolores sequi unde sit ea ad ipsa cum eius commodi impedit labore nihil odio ipsum, delectus aliquam quis? Unde!</p>
+          </div>
+        </div>
+      </div>      
+    </section>
+    <section class="section2">
+      
+    </section>
+    <section class="section1-bis">
+      <div class="s1-bis content">
+        <div class="s1-bis header">
+          <div class="s1-bis txt">
+            <div class="s1-bis collections">
+              <h1 class="hone">COLLECTIONS<br>_</h1>
+            </div>
+            <div class="s1-bis texte">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque magnam asperiores accusantium non, consequuntur consequatur voluptates reiciendis aspernatur dolorem corporis vero, atque temporibus molestias iure adipisci aut. Nihil, debitis rem!</p>
+            </div>
+          </div>
+          <div class="s1-bis date">
+            <div class="s1-bis date2020">
+              <p>_</p>
+              <p id="datebis">2020</p>
+              <p>_</p>
+            </div>
+          </div>
+        </div>
+        <div class="s1-bis content-img">
+          <div class="s1-bis img-header">
+            <div class="s1-bis img-header1">
+              <img class="imgheader" src="{{ asset('/img/home/simple.jpg') }}">
+            </div>
+            <div class="s1-bis img-header2">
+              <img class="imgheader" src="{{ asset('/img/home/simple.jpg') }}">
+            </div>
+          </div>
+          <div class="s1-bis img-footer">
+            <div class="s1-bis img-footer1">
+              <img id="imgfooter1" src="{{ asset('/img/home/simple.jpg') }}">
+            </div>
+            <div class="s1-bis img-footer2-3">
+              <div class="s1-bis img-footer2">
+                <img class="test" src="{{ asset('/img/home/simple.jpg') }}">
+              </div>
+              <div class="s1-bis img-footer3">
+                <img class="test" src="{{ asset('/img/home/simple.jpg') }}">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
+    <section class="section2-bis">
+      
+    </section>
+    <section class="section1" id="offres">
+      <div id="s1-container">
+        <div id="s1-content">
+          <div id="s1-logo">
+            <img id="smallLogo" src="{{ asset('/img/home/logoCO.png') }}">
+          </div>
+          <div id="s1-tiret">
+            <h2 id="smallLogoTiret">_</h2>
+          </div>
+        </div>
+        <div id="s1-text">
+          <div id="title-philo">
+            <h1 class="hone">OFFRES<br>_</h1>
+          </div>
+          <div id="text-philo">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit maiores corrupti dolores sequi unde sit ea ad ipsa cum eius commodi impedit labore nihil odio ipsum, delectus aliquam quis? Unde!</p>
+          </div>
+        </div>
+      </div>      
+    </section>
+    <section class="section1-bis">
+      <div class="s1-bis content">
+        <div class="s1-bis content-img">
+          <div class="s1-bis img-header">
+            <div class="s1-bis img-header1">
+              <img class="imgheader" src="{{ asset('/img/home/solo.png') }}">
+            </div>
+            <div class="s1-bis img-header2">
+              <img class="imgheader" src="{{ asset('/img/home/duo.png') }}">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="s1-bis containerMag">
+        <div class="s1-bis linkMag">
+          <div class="ongletmag">
+            <h1 class="hone">MAGASINS</h1>
+          </div>
+          <div class="tiretmag">
+            <h1 class="hone">-</h1>
+          </div>
+          <div class="ongletmag2">
+            <h1 class="hone">CONCEPT OPTIQUE</h1>
+          </div>
+        </div>
+        <div class="s1-bis mapMag">
+          <img class="imgMap" src="{{ asset('/img/home/map.png') }}">
+        </div>
+        <div class="socialmedia">
+          <div class="social fb">
+            <a href="https://www.facebook.com/JM2CO" target="_blank">Facebook</a>
+          </div>
+          <div class="social insta">
+            <a href="https://www.instagram.com/concept_optique/" target="_blank">Instagram</a>
+          </div>
+        </div>
+      </div>
+    </section>
 {% endblock %}

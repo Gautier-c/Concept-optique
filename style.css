@@ -136,7 +136,7 @@ section {
   display:text;
   align-items: center;
 }
-#hone
+.hone
 {
   font-size: 4em;
   font-weight: 200;
@@ -154,14 +154,11 @@ section {
 .section1-bis
 {
   background: #1B1812;
-  box-shadow: 0 0 20px #333;
   z-index: 1;
-  min-height: 200vh;
 }
 .section1-bis2
 {
   background: #1B1812;
-  box-shadow: 0 0 20px #333;
   z-index: 1;
   min-height: 200vh;
 }
@@ -176,15 +173,16 @@ section {
 }
 .content{
   flex-direction: column;
+  z-index: 0;
 }
 .header
 {
   margin-top: 10vh;
+  width:80vw;
 }
 .txt
 {
   flex-direction: column;
-  margin-left: 5vw;
 }
 .collections h1
 {
@@ -231,11 +229,11 @@ section {
 .img-footer
 {
   width:80vw;
+  margin-top: 10vh;
   margin-bottom: 10vh;
 }
 .img-footer1
 {
-  margin-top: 10vh;
   width: 50vw;
 }
 #imgfooter1
@@ -246,24 +244,63 @@ section {
 .img-footer2-3
 {
   flex-direction: column;
-  margin-top: 10vh;
-  width:50vw;
+  width:40vw;
   height: auto;
   margin-left:10vw;
 }
+.img-footer2
+{
+  justify-content: center;
+}
 .img-footer3
 {
-padding-top:10vh;
+  justify-content: center;
+  padding-top:10vh;
 }
 
 .test
 {
-  width:20vw;
+  width:100%;
   height: auto;
-  
 }
 
-
+/* !!!!!!!!!!! MISE EN FORME ONGLET MAGASINS !!!!!!!!!!!!!!!!!*/
+.containerMag
+{
+  display:flex;
+  flex-direction: column;
+  margin-top: 10vh;
+}
+.linkMag
+{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  width:40vw;
+  margin-left: -30vw;
+}
+.ongletmag, .ongletmag2, .tiretmag
+{
+  width:100%;
+  margin-bottom: 5vh;
+} 
+.socialmedia
+{
+  margin-top: 10vh;
+  margin-bottom: 10vh;
+}
+.fb
+{
+  margin-bottom: 2.5vh;
+}
+.social
+{
+  font-size: 1.5em;
+}
+.social:hover
+{
+  color:grey;
+}
 
 
 
@@ -321,7 +358,6 @@ h2 {
   font-weight: 100;
   position: absolute;
   padding: 1rem;
-  box-shadow: 0 0 20px #333;
   top: 50%;
   left: 50%;
   -webkit-transform: translateZ(-1px) scale(2) translate(-25%, -25%);
@@ -336,7 +372,6 @@ h2 {
   font-weight: 100;
   position: absolute;
   padding: 1rem;
-  box-shadow: 0 0 20px #333;
   top: 50%;
   left: 50%;
   -webkit-transform: translateZ(-1px) scale(2) translate(-25%, -25%);
@@ -394,4 +429,90 @@ body {
   font-size: 62.5%;
   font-family: 'Overlock', Arial, Helvetica, sans-serif;
   scroll-behavior: smooth;
+}
+
+
+
+
+
+/* RESPONSIVE */
+@media all and (max-width: 640px) {
+
+  /* PHILO */
+  #s1-container
+  {
+    display:flex;
+    flex-direction: column;
+  }
+  #s1-content
+  {
+    display:none;
+  }
+  #s1-text
+  {
+    margin-left:0vw;
+    margin-top: 8vh;
+  }
+  #title-philo
+  {
+    margin-top:5vh;
+  }
+  #text-philo
+  {
+    width:80vw;
+    margin-bottom: 5vh;
+  }
+
+  /* COLLECTIONS */
+  .date
+  {
+    display:none;
+  }
+  .collections
+  {
+    width:80vw;
+    
+  }
+  .texte
+  {
+    width:80vw;
+    
+  }
+
+  .content-img, .img-header , .img-footer
+  {
+    display:flex;
+    flex-direction: column;
+  }
+  .imgheader, .test, #imgfooter1
+  {
+    width:80vw;
+    height: auto;
+  }
+  .img-header1
+  {
+    margin-top: 5vh;
+  }
+  .img-header2
+  {
+    margin-left: 0;
+    margin-top: 5vh;
+  }
+  .img-footer
+  {
+    margin-top: 5vh;
+  }
+  .img-footer1
+  {
+    width:auto;
+  }
+  .img-footer2-3
+  {
+    margin-left: 0vw;
+    margin-top: 5vh;
+  }
+  .img-footer3
+  {
+    padding-top: 5vh;
+  }
 }
